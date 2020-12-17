@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC730512-E97B-4175-A433-90A241E590D4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ManagerStoreBuilding</RootNamespace>
+    <AssemblyName>ManagerStoreBuilding</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormDK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDK.Designer.cs">
+      <DependentUpon>FormDK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDT.Designer.cs">
+      <DependentUpon>FormDT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHD.Designer.cs">
+      <DependentUpon>FormHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKH.Designer.cs">
+      <DependentUpon>FormKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKHTC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKHTC.Designer.cs">
+      <DependentUpon>FormKHTC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNCC.Designer.cs">
+      <DependentUpon>FormNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPN.Designer.cs">
+      <DependentUpon>FormPN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVT.Designer.cs">
+      <DependentUpon>FormVT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormDK.resx">
+      <DependentUpon>FormDK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDT.resx">
+      <DependentUpon>FormDT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHD.resx">
+      <DependentUpon>FormHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKH.resx">
+      <DependentUpon>FormKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKHTC.resx">
+      <DependentUpon>FormKHTC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNCC.resx">
+      <DependentUpon>FormNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPN.resx">
+      <DependentUpon>FormPN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVT.resx">
+      <DependentUpon>FormVT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box-out-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\City-Warehouse-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document-Line-Chart-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document-Line-Chart-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-database-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Downloads-Black-Folder-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Extras-Shutdown-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Order-history-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Order-history-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reseller-account-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reseller-account-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\secrecy-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StrappedBox-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Supervisor-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Supervisor-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoom-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pen-edit-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin-red-full-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9f5d6b94496517.5e808d30f29c2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pen-edit-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin-red-full-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoom-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pen-edit-icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin-red-full-icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoom-icon2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
